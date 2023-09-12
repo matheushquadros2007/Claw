@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Remove margins and padding from the list */
+.pupoLinda {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+.pupoLinda li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+.pupoLinda li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+.pupoLinda li:hover {
+    background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+.pupoLinda li.checked {
+    background: #04aa6d;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+.pupoLinda li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 3px 16px 3px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.container-1 {
+    background-color: #356d6d;
+    padding: 20px;
+    color: snow;
+}
+
+.container-1 h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 1rex;
+}
+
+.subContainerOne {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Style the input */
+.subContainerOne input {
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+    padding: 10px 13px;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+/* Style the "Add" button */
+.addBtn {
+    padding: 10px 16px;
+    background-color: #b81556;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-left: 2rex;
+    border: none;
+}
+
+.addBtn:hover {
+    opacity: 0.9;
+    transition: all 500ms ease;
+}
+
+/* /achievement list */

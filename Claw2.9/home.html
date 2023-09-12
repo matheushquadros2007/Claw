@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claw | Home</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="img/claw_logo_b.png">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/claw_logo_b.png" alt="Logo da empresa do cabeçalho | Claw">
+    </div>
+    <!-- Menu de navegação - sidebar -->
+    <div id="mySidenav" class="sidenav">
+      <a href="home.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="achievement.html">Conquistas</a>
+      <a href="about.html">Sobre</a>
+    </div>
+    <!-- Elemento para abrir o menu -->
+    <div class="clearfix" id="main">
+      <span id="menuToggle" onclick="toggleNav()">&#9776;</span>
+    </div>
+  </header>
+
+  <!-- Topnav -->
+  <div class="topnav clearfix">
+    <a href="home.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="achievement.html">Conquistas</a>
+    <a href="about.html">Sobre</a>
+  </div>
+  <!-- /Topnav -->
+
+  <!-- div dos slides -->
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <a href="https://scratch.mit.edu/projects/530179400/">
+        <img src="img/between-records.jpeg" alt="Slide 1">
+      </a>
+    </div>
+    <div class="slide fade">
+      <a href="https://scratch.mit.edu/projects/823445363/">
+        <img src="img/dodge-mania.png" alt="Slide 2">
+      </a>
+    </div>
+    <div class="slide fade">
+      <a href="https://scratch.mit.edu/projects/780235975/">
+        <img src="img/dog-nightmares.png" alt="Slide 3">
+      </a>
+    </div>
+    <div class="slide fade">
+      <a href="https://scratch.mit.edu/projects/829610226/">
+        <img src="img/epic-tower-defense.png" alt="Slide 4">
+      </a>
+    </div>
+    <div class="slide fade">
+      <a href="https://scratch.mit.edu/projects/875338625/">
+        <img src="img/escape-room.png" alt="Slide 5">
+      </a>
+    </div>
+    <div class="slide fade">
+      <a href="https://scratch.mit.edu/projects/554521640/">
+        <img src="img/escape-room-2.png" alt="Slide 6">
+      </a>
+    </div>
+    <div class="slide fade">
+      <a href="https://scratch.mit.edu/projects/514525395/">
+        <img src="img/experiment.png" alt="Slide 7">
+      </a>
+    </div>
+    <div class="slide fade">
+      <a href="https://scratch.mit.edu/projects/549356427/">
+        <img src="img/lucky-football.jpeg" alt="Slide 8">
+      </a>
+    </div>
+    <div class="slide fade">
+      <a href="https://scratch.mit.edu/projects/832816324/">
+        <img src="img/minecraft-platformer.png" alt="Slide 9">
+      </a>
+    </div>
+    <div class="slide fade">
+      <a href="https://scratch.mit.edu/projects/121424480/">
+        <img src="img/music-maker.png" alt="Slide 10">
+      </a>
+    </div>
+    <div class="slide fade">
+      <a href="https://scratch.mit.edu/projects/834956177/">
+        <img src="img/rhythm.png" alt="Slide 11">
+      </a>
+    </div>
+    <div class="slide fade">
+      <a href="https://scratch.mit.edu/projects/816008057/">
+        <img src="img/rolling-skies.png" alt="Slide 12">
+      </a>
+    </div>
+    <div class="slide fade">
+      <a href="https://scratch.mit.edu/projects/795072056/">
+        <img src="img/scratchy-adventure.png" alt="Slide 13">
+      </a>
+    </div>
+    <div class="slide fade">
+      <a href="https://scratch.mit.edu/projects/124109065/">
+        <img src="img/witch-a-halloween-adventure.png" alt="Slide 11">
+      </a>
+    </div>
+  </div>
+  <!-- Fim da div dos slides -->
+
+  <!-- Games-->
+
+  <!-- Botões e <h2> da seção de games -->
+  <section class="gamesContainer">
+    <h2>Aqui estão nossos jogos, escolha o gênero de sua preferência ou selecione todos os gêneros</h2>
+    <div id="gamesBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">Todos os Gêneros</button>
+      <button class="btn" onclick="filterSelection('action')">Ação</button>
+      <button class="btn" onclick="filterSelection('adventure')">Aventura</button>
+      <button class="btn" onclick="filterSelection('sports')">Esportes</button>
+      <button class="btn" onclick="filterSelection('simulator')">Simulação</button>
+      <button class="btn" onclick="filterSelection('puzzle')">Quebra-Cabeça</button>
+      <button class="btn" onclick="filterSelection('plataform')">Plataforma</button>
+      <button class="btn" onclick="filterSelection('music')">Música</button>
+    </div>
+  </section>
+
+  <main class="containerGames">
+    <div class="filterDiv action">
+      <div class="container-games">
+        <div class="game-card">
+          <a href="https://scratch.mit.edu/projects/780235975/">
+            <img src="img/dog-nightmares.png" class="game-image" alt="">
+          </a>
+          <h2>Dog Nightmare</h2>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv action">
+      <div class="container-games">
+        <div class="game-card">
+          <a href="https://scratch.mit.edu/projects/816008057/">
+            <img src="img/rolling-skies.png" class="game-image" alt="">
+          </a>
+          <h2>Rolling Skies</h2>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv action">
+      <div class="container-games">
+        <div class="game-card">
+          <a href="https://scratch.mit.edu/projects/829610226/">
+            <img src="img/epic-tower-defense.png" class="game-image" alt="">
+          </a>
+          <h2>Epic Tower Defense</h2>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv adventure">
+      <div class="container-games">
+        <div class="game-card">
+          <a href="https://scratch.mit.edu/projects/795072056/">
+            <img src="img/scratchy-adventure.png" class="game-image" alt="">
+          </a>
+          <h2>Scratchy Adventure</h2>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv adventure">
+      <div class="container-games">
+        <div class="game-card">
+          <a href="https://scratch.mit.edu/projects/124109065/">
+            <img src="img/witch-a-halloween-adventure.png" class="game-image" alt="">
+          </a>
+          <h2>Witch - A Halloween Adventure</h2>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv sports">
+      <div class="container-games">
+        <div class="game-card">
+          <a href="https://scratch.mit.edu/projects/549356427/">
+            <img src="img/lucky-football.jpeg" class="game-image" alt="">
+          </a>
+          <h2>Lucky Football</h2>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv sports">
+      <div class="container-games">
+        <div class="game-card">
+          <a href="https://scratch.mit.edu/projects/530179400/">
+            <img src="img/between-records.jpeg" class="game-image" alt="">
+          </a>
+          <h2>Between Records</h2>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv simulator">
+      <div class="container-games">
+        <div class="game-card">
+          <a href="https://scratch.mit.edu/projects/514525395/">
+            <img src="img/experiment.png" class="game-image" alt="">
+          </a>
+          <h2>Experiment: Other Planet's Gravity</h2>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv puzzle">
+      <div class="container-games">
+        <div class="game-card">
+          <a href="https://scratch.mit.edu/projects/875338625/">
+            <img src="img/escape-room.png" class="game-image" alt="">
+          </a>
+          <h2>Escape Room! (by aSmileyFaceSticker)</h2>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv puzzle">
+      <div class="container-games">
+        <div class="game-card">
+          <a href="https://scratch.mit.edu/projects/554521640/">
+            <img src="img/escape-room-2.png" class="game-image" alt="">
+          </a>
+          <h2>Escape Room (by Milue)</h2>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv plataform">
+      <div class="container-games">
+        <div class="game-card">
+          <a href="https://scratch.mit.edu/projects/823445363/">
+            <img src="img/dodge-mania.png" class="game-image" alt="">
+          </a>
+          <h2>Dodge Mania</h2>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv plataform">
+      <div class="container-games">
+        <div class="game-card">
+          <a href="https://scratch.mit.edu/projects/832816324/">
+            <img src="img/minecraft-platformer.png" class="game-image" alt="">
+          </a>
+          <h2>Minecraft Platformer</h2>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv music">
+      <div class="container-games">
+        <div class="game-card">
+          <a href="https://scratch.mit.edu/projects/121424480/">
+            <img src="img/music-maker.png" class="game-image" alt="">
+          </a>
+          <h2>Music Maker</h2>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv music">
+      <div class="container-games">
+        <div class="game-card">
+          <a href="https://scratch.mit.edu/projects/834956177/">
+            <img src="img/rhythm.png" class="game-image" alt="">
+          </a>
+          <h2>Rhythm</h2>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Games -->
+
+  <footer class="clearfix">
+    <div class="logo">
+        <img src="img/claw_logo_b.png" alt="Logotipo do rodapé">
+    </div>
+    <div class="redes-sociais">
+        <a href="https://www.facebook.com" title="Facebook" target="_blank">
+            <div class="facebook icon-facebook icon-32 warp3"></div>
+        </a>
+        <a href="https://www.instagram.com" title="Instagram" target="_blank">
+            <div class="instagram icon-instagram icon-32 warp3"></div>
+        </a>
+        <a href="https://twitter.com" title="Twitter" target="_blank">
+            <div class="twitter icon-twitter icon-32 warp3"></div>
+        </a>
+        <a href="https://www.youtube.com" title="Youtube" target="_blank">
+            <div class="youtube icon-youtube icon-32 warp3"></div>
+        </a>
+    </div>
+    <nav class="links-footer">
+        <ul>
+            <li><a href="index.html" target="_blank">Política de privacidade</a></li>
+            <li><a href="index.html" target="_blank">Cookies</a></li>
+            <li><a href="index.html" target="_blank">Termos de condição e venda</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <span>2023 &copy; Claw | Todos os direitos reservados.</span>
+    <nav class="links-footer warp2">
+        <ul>
+            <li><a href="index.html" target="_blank">Contato</a></li>
+            <li><a href="sobre.html" target="_blank">Sobre o Claw</a></li>
+            <li><a href="index.html" target="_blank">Blog</a></li>
+            <li><a href="index.html" target="_blank">Carreiras</a></li>
+        </ul>
+    </nav>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/slideshow.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/filterListGames.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claw | Conquista</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleAchievement.css">
+  <link rel="shortcut icon" href="img/claw_logo_b.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="home.html">
+        <img src="img/claw_logo_b.png" alt="Logo da empresa do cabeçalho | Claw">
+      </a>
+    </div>
+    <!-- Menu de navegação - sidebar -->
+    <div id="mySidenav" class="sidenav">
+      <a href="home.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="achievement.html">Conquistas</a>
+      <a href="about.html">Sobre</a>
+    </div>
+    <!-- Elemento para abrir o menu -->
+    <div class="clearfix" id="main">
+      <span id="menuToggle" onclick="toggleNav()">&#9776;</span>
+    </div>
+  </header>
+
+  <!-- Topnav -->
+  <div class="topnav clearfix">
+    <a href="home.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="achievement.html">Conquistas</a>
+    <a href="about.html">Sobre</a>
+  </div>
+  <!-- /Topnav -->
+
+  <!-- achievement list -->
+  <div id="myDIV" class="container-1 clearfix">
+    <h2>Lista de Conquistas</h2>
+    <div class="subContainerOne">
+      <input type="text" id="myInput" placeholder="Conquista nova...">
+      <button onclick="newElement()" class="addBtn" type="button">Adicionar Conquistas</button>
+    </div>
+  </div>
+
+  <ul id="myUL" class="pupoLinda">
+    <li class="mariaLinda">Criar seu próprio recorde</li>
+    <li class="mariaLinda">Bater o recorde global</li>
+    <li class="mariaLinda">Fazer mais de 25 pontos</li>
+    <li class="mariaLinda">Vencer de seu amigo</li>
+    <li class="mariaLinda">Chegar ao final de um jogo</li>
+  </ul>
+  <!-- /achievement list -->
+
+  <footer class="clearfix footer-login">
+    <div class="logo">
+        <img src="img/claw_logo_b.png" alt="Logotipo do rodapé">
+    </div>
+    <div class="redes-sociais">
+        <a href="https://www.facebook.com" title="Facebook" target="_blank">
+            <div class="facebook icon-facebook icon-32 warp3"></div>
+        </a>
+        <a href="https://www.instagram.com" title="Instagram" target="_blank">
+            <div class="instagram icon-instagram icon-32 warp3"></div>
+        </a>
+        <a href="https://twitter.com" title="Twitter" target="_blank">
+            <div class="twitter icon-twitter icon-32 warp3"></div>
+        </a>
+        <a href="https://www.youtube.com" title="Youtube" target="_blank">
+            <div class="youtube icon-youtube icon-32 warp3"></div>
+        </a>
+    </div>
+    <nav class="links-footer">
+        <ul>
+            <li><a href="index.html" target="_blank">Política de privacidade</a></li>
+            <li><a href="index.html" target="_blank">Cookies</a></li>
+            <li><a href="index.html" target="_blank">Termos de condição e venda</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <span>2023 &copy; Claw | Todos os direitos reservados.</span>
+    <nav class="links-footer warp2">
+        <ul>
+            <li><a href="index.html" target="_blank">Contato</a></li>
+            <li><a href="sobre.html" target="_blank">Sobre o Claw</a></li>
+            <li><a href="index.html" target="_blank">Blog</a></li>
+            <li><a href="index.html" target="_blank">Carreiras</a></li>
+        </ul>
+    </nav>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/script-achievement.js"></script>
+</body>
+
+</html>

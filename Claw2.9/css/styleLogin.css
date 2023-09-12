@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    background-color: snow;
+}
+
+/* Login */
+
+/* LoginCenter */
+.sectionCenter {
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 10px;
+    box-sizing: border-box;
+}
+
+.sectionCenter h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    color: #000706;
+    margin: 0;
+}
+
+/* Div do input do "Lembre de mim" */
+.remember {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rex;
+    margin-bottom: 1rex;
+}
+
+.remember-label {
+    display: flex;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    float: none;
+    margin: 0;
+    padding: 0;
+    font-size: unset;
+}
+
+.remember h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #000706;
+    margin: 0;
+}
+/* Fim da div do Input "Lembre de mim" */
+
+/* /LoginCenter */
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+/* Parâmetrar o style para o button de <login> */
+.faz-o-L-agora {
+    background-color: rgb(219, 219, 219);
+    color: #000706;
+    padding: 14px 50px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-size: 17px;
+    border-radius: 20px;
+}
+
+.buttonL:hover, .faz-o-L-agora:hover {
+    opacity: 0.8;
+    transition: all 500ms ease;
+}
+
+/* Setar o style pros outros dois buttons */
+.buttonL {
+    background-color: #04aa6d;
+    color: white;
+    padding: 14px 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 150px;
+}
+
+.container-faz-o-L {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    font-size: xx-large;
+    margin: 1.5rex 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container-login {
+    margin: 1.5rex 16px;
+}
+
+.container-login label b {
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    border-radius: 15px;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/* Contâiner do button de cancel */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rex 16px;
+}
+
+.psw {
+    font-size: 12px;
+    margin-top: 1rex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.psw a {
+    text-decoration: none;
+    color: #000706;
+}
+
+.psw a:hover {
+    opacity: 0.8;
+    transition: all 500ms ease;
+    text-decoration: underline;
+}
+/* /Contâiner do button de cancel */
+
+.footer-login {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* /Login */

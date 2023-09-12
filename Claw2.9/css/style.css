@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  margin: 0 auto;
+  background-color: #15191d;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Classe limpadora de floats na div pai */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #000706;
+  margin: 0 auto;
+  padding: 12px 72px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Logo do cabeçalho */
+.logo {
+  width: 45px;
+  display: inline-block;
+}
+
+.logo img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* Navegacao */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ddd;
+  overflow-x: hidden;
+  transition: all 500ms ease;
+  box-sizing: border-box;
+}
+
+.sidenav a {
+  margin: 8px 62.5px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000;
+  display: block;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sidenav a:hover {
+  color: #bfac8b;
+  transition: all 500ms ease;
+  text-decoration: underline;
+}
+
+#main {
+  transition: margin-right 0.5s;
+  position: fixed;
+  top: 12px;
+  right: 72px;
+  z-index: 2;
+}
+
+#menuToggle {
+  color: #fff;
+  box-sizing: border-box;
+  background-color: #000706;
+  padding: 3px 6.5px;
+  border-radius: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: right 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Fim do cabeçalho */
+
+/* Topnav */
+.topnav {
+  background-color: #00272d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topnav a {
+  display: block;
+  color: snow;
+  text-align: center;
+  padding: 13px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  transition: all 300ms ease;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+  color: skyblue;
+}
+/* /Topnav */
+
+/* SlideShow */
+.slideshow-container {
+  box-sizing: border-box;
+  background-color: black;
+  padding: 20px;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+.slide img {
+  width: 60%;
+  vertical-align: middle;
+  border-radius: 1rex;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+/* /SlideShow */
+
+/* section.gamesContainer */
+.gamesContainer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 10px;
+}
+
+.gamesContainer h2 {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-size: 20px;
+  color: aliceblue  ;
+  text-align: center;
+}
+
+/* Estilizações do botões */
+#gamesBtnContainer {
+  margin-top: 1rex;
+}
+
+.btn {
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 12px 16px;
+  background-color: lightskyblue;
+  color: #00272d;
+  cursor: pointer;
+  margin-right: 2rex;
+}
+
+.btn:last-child {
+  margin: 0;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: all 500ms ease;
+}
+
+.btn.active {
+  background-color: #f7a21b;
+  color: #000;
+}
+/* Fim da estilização dos botões */
+/* /section.containerGames */
+
+/* filter list games*/
+.containerGames {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 30px 10px;
+}
+
+.filterDiv {
+  width: 35%;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #00272d;
+  text-align: center;
+  margin: 20px;
+  display: none;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.filterDiv:hover {
+  transform: scale(1.1) translateY(5px);
+  transition: all 400ms ease;
+}
+
+/* Classe especial que aparece nas divs com classe .filterDiv através de JavaScript */
+.show {
+  display: block;
+}
+
+.container-games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.game-card {
+  background-color: #fff;
+  text-align: center;
+  transition: all 800ms;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.game-image {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.game-card h2, .game-card p {
+  margin: 0;
+}
+/* /filter list games */
+
+/* Rodapé */
+footer {
+  background-color:#000706;
+  box-sizing: border-box;
+  padding: 12px 30px;
+}
+
+/* Redes sociais */
+.redes-sociais {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  float: right;
+}
+
+.icon-32 {
+  background-image: url(../img/icons-32.svg);
+  width: 32px;
+  height: 32px;
+}
+
+/* Facebook */
+.icon-facebook {
+  background-position: 0px -288px;
+}
+
+.facebook {
+  filter: saturate(1) invert(1) sepia(5%) hue-rotate(72deg) brightness(97%) contrast(110%);
+}
+
+/* Instagram */
+.icon-instagram {
+  background-position: -48px -288px;
+}
+
+.instagram {
+  filter: saturate(1) invert(1) sepia(5%) hue-rotate(72deg) brightness(97%) contrast(110%);
+}
+
+/* Twitter */
+.icon-twitter {
+  background-position: -144px -288px;
+}
+
+.twitter {
+  filter: saturate(1) invert(1) sepia(5%) hue-rotate(72deg) brightness(97%) contrast(110%);
+}
+
+/* Youtube */
+.icon-youtube {
+  background-position: -192px -288px;
+}
+
+.youtube {
+  filter: saturate(1) invert(1) sepia(5%) hue-rotate(72deg) brightness(97%) contrast(110%);
+}
+
+/* Fim das redes sociais */
+footer hr {
+  border: none;
+  height: 1px;
+  background-color: #f2f2f2;
+  margin: 15px 0;
+}
+
+footer span {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17.5px;
+  text-align: center;
+  display: block;
+  color: snow;
+}
+
+/* Links do footer */
+.links-footer {
+  display: block;
+}
+
+.links-footer ul {
+  padding: 0;
+}
+
+.links-footer ul li {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 5px;
+  font-size: 11px;
+}
+
+.links-footer ul:last-child {
+  margin-bottom: 0;
+}
+
+.links-footer ul li:last-child {
+  margin: 0;
+}
+
+.links-footer ul li a {
+  text-decoration: none;
+  color: snow;
+}
+
+.links-footer ul li a:hover {
+  color: #bfac8b;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+}
+/* Fim do footer */
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .game-card {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .game-card {
+    flex-basis: calc(100% / 3 - 20px);
+  }
+}
